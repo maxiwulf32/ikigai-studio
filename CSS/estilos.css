@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-link {
+  display: block;
+  pointer-events: auto;
+}
+
+.carousel-item a {
+  cursor: pointer;
+}
+
+.navbar .navbar-brand {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.navbar .navbar-brand:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+.navbar .navbar-brand img {
+  transition: transform 0.2s ease;
+}
+.navbar .navbar-brand:hover img {
+  transform: rotate(-2deg);
+}
+
+.carousel .carousel-inner {
+  height: 420px;
+}
+.carousel .carousel-item {
+  height: 100%;
+}
+.carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel .carousel-inner {
+  height: 420px;
+}
+@media (max-width: 768px) {
+  .carousel .carousel-inner {
+    height: 260px;
+  }
+}
+
+.carousel-item:first-child img {
+  object-position: center center;
+}
+
+.carousel-item:nth-child(2) img {
+  object-position: center right;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikigai Studio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body>
+
+<header>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+    <div class="container-fluid">
+
+      <!-- Logo -->
+      <a href="../main.html" class="navbar-brand d-flex align-items-center">
+        <img src="../IMG/Logo.png" alt="logo" width="60" class="me-2">
+        Bonsai Studio
+      </a>
+
+      <!-- Toggle-->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="../main.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="escuela.html">Escuela</a></li>
+          <li class="nav-item"><a class="nav-link active" href="taller.html">Inscripción</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Árboles</a></li>
+          <li class="nav-item"><a class="nav-link" href="arboles.html">Especies</a></li>
+
+          <!-- Buscador -->
+          <li class="nav-item ms-lg-3">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar en la página"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- INTRO -->
+<section class="intro-consulta py-5">
+  <div class="container">
+    <h2>¿Querés saber más?</h2>
+    <p>
+      Si te interesa aprender el arte del bonsái y formar parte de una comunidad
+      que ya acompaña a cientos de alumnos en su camino, te invitamos a dejarnos
+      tus datos. Nos vamos a contactar para brindarte más información sobre los
+      cursos, talleres y próximas inscripciones.
+    </p>
+  </div>
+</section>
+
+<!-- HORARIOS -->
+<section class="taller-horarios py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center">Horarios disponibles</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <h5 class="card-title">Taller Inicial</h5>
+            <p class="card-text">
+              Miércoles<br>
+              18:00 a 20:00 hs<br>
+              Modalidad presencial
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <h5 class="card-title">Nivel Intermedio</h5>
+            <p class="card-text">
+              Viernes<br>
+              17:00 a 19:30 hs<br>
+              Modalidad presencial
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <h5 class="card-title">Workshop Intensivo</h5>
+            <p class="card-text">
+              Sábados<br>
+              10:00 a 13:00 hs<br>
+              Cupos limitados
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FORMULARIO -->
+<section class="consulta-main py-5">
+  <div class="container">
+    <form class="bg-dark text-white p-4 rounded shadow">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="tu@email.com">
+      </div>
+
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono / WhatsApp</label>
+        <input type="tel" id="telefono" class="form-control" placeholder="+54 9 11 1234 5678">
+      </div>
+
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea id="mensaje" class="form-control" rows="4" placeholder="Escribí tu mensaje"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success w-100">
+        Enviar
+      </button>
+    </form>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
