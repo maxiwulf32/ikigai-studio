@@ -1,0 +1,56 @@
+//productos en venta en main//
+.productos {
+  margin-top: 2rem;
+
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: .75rem;
+    overflow: hidden;
+
+    // carusel 
+    .carousel {
+      width: 100%;
+
+      .carousel-inner {
+        height: 220px;
+      }
+
+      .carousel-item {
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      padding: 1rem;
+
+      .card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+      }
+
+      .card-text {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        margin-top: auto;
+      }
+    }
+  }
+}

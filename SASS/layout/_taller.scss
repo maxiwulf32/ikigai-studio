@@ -1,0 +1,23 @@
+.talleres {
+  background-color: #f8f9fa;
+
+  h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .card {
+    border-radius: 12px;
+    transition: transform .3s ease, box-shadow .3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    }
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+}

@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-.carousel-link {
-  display: block;
-  pointer-events: auto;
-}
-
-.carousel-item a {
-  cursor: pointer;
-}
-
 .navbar .navbar-brand {
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
@@ -28,34 +19,221 @@
   transform: rotate(-2deg);
 }
 
-.carousel .carousel-inner {
-  height: 420px;
+.talleres {
+  background-color: #f8f9fa;
 }
-.carousel .carousel-item {
+.talleres h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.talleres .card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.talleres .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.talleres .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-horario {
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-horario:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+.card-horario::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid #405e48;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.card-horario:hover::before {
+  opacity: 1;
+}
+
+.productos {
+  margin-top: 2rem;
+}
+.productos .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.productos .card .carousel {
+  width: 100%;
+}
+.productos .card .carousel .carousel-inner {
+  height: 220px;
+}
+.productos .card .carousel .carousel-item {
   height: 100%;
 }
-.carousel .carousel-item img {
+.productos .card .carousel .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+}
+.productos .card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem;
+}
+.productos .card .card-body .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.productos .card .card-body .card-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.productos .card .card-body button {
+  margin-top: auto;
 }
 
-.carousel .carousel-inner {
-  height: 420px;
+.escuela {
+  background-color: #f8f9fa;
 }
-@media (max-width: 768px) {
-  .carousel .carousel-inner {
-    height: 260px;
-  }
+.escuela .titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.escuela .intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #555;
+}
+.escuela h2 {
+  font-weight: 600;
+  color: #2f4f3a;
+}
+.escuela .historia {
+  text-align: center;
+}
+.escuela p {
+  max-width: 900px;
+  margin: 0 auto 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+}
+.escuela__subtitulo {
+  text-align: center;
+  margin-top: 3rem;
+}
+.escuela__texto {
+  max-width: 900px;
+  margin: 0 auto 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+}
+.escuela__cta {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.escuela__cta h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.escuela__cta p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+.escuela__cta .btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
 }
 
-.carousel-item:first-child img {
-  object-position: center center;
+.galeria {
+  background-color: #f8f9fa;
+}
+.galeria h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2f4f3a;
+}
+.galeria p {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+}
+.galeria img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.galeria img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
 }
 
-.carousel-item:nth-child(2) img {
-  object-position: center right;
+section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2f4f3a;
+}
+section .card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
+}
+section .card img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+section .card .card-body {
+  padding: 1.5rem;
+}
+section .card .card-body .card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #405e48;
+  margin-bottom: 0.75rem;
+}
+section .card .card-body .card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+section .card .card-body .card-text strong {
+  color: #2f4f3a;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=estilos.css.map */

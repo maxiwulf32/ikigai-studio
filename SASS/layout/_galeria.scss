@@ -1,0 +1,31 @@
+//galeria//
+.galeria {
+  background-color: #f8f9fa;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2f4f3a;
+  }
+
+  p {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+  }
+
+  img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: .75rem;
+    transition: transform .35s ease, box-shadow .35s ease;
+
+    &:hover {
+      transform: scale(1.04);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, .18);
+    }
+  }
+}

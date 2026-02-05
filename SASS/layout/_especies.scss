@@ -1,0 +1,35 @@
+.especies {
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2f4f3a;
+  }
+
+  .card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 35px rgba(0,0,0,.15);
+    }
+
+    img {
+      min-height: 220px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #405e48;
+    }
+
+    strong {
+      color: #2f4f3a;
+    }
+  }
+}

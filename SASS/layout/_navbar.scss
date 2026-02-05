@@ -1,0 +1,19 @@
+.navbar {
+  .navbar-brand {
+    cursor: pointer;
+    transition: transform .2s ease, opacity .2s ease;
+
+    &:hover {
+      opacity: .85;
+      transform: scale(1.02);
+    }
+
+    img {
+      transition: transform .2s ease;
+    }
+
+    &:hover img {
+      transform: rotate(-2deg);
+    }
+  }
+}

@@ -1,0 +1,73 @@
+
+.escuela {
+  background-color: #f8f9fa;
+
+  .titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: center;
+    color: #555;
+  }
+
+  h2 {
+    font-weight: 600;
+    color: #2f4f3a;
+  }
+
+  .historia {
+    text-align: center;
+  }
+
+  p {
+    max-width: 900px;
+    margin: 0 auto 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444;
+  }
+
+  &__subtitulo {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  &__texto {
+    max-width: 900px;
+    margin: 0 auto 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444;
+  }
+
+  &__cta {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      color: #555;
+    }
+
+    .btn {
+      padding: 0.75rem 2rem;
+      font-size: 1.1rem;
+    }
+  }
+}
